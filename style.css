@@ -4,6 +4,7 @@ body {
     width: 100vw;
     height: 40vh;
     position: relative;
+    overflow: hidden;
 }
 
 .box{
