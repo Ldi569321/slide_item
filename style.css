@@ -4,7 +4,6 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    overflow: hidden;
 }
 
 .box{
@@ -90,7 +89,6 @@ body {
     color: white;
 }
 
-
 .slider-inner {
     left: 0;
     top: 0;
@@ -99,7 +97,6 @@ body {
     요소를 옮기려면 absolute가 있어야 left를 사용할수있는데
     absolute가 없으면 이동이 되지를 않음 */
     position: absolute;
-    transition: all 0.25s ease;
     animation: fadeoutLeft 0.25s;
     animation-fill-mode: forwards;
 }

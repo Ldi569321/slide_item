@@ -5,10 +5,10 @@ const box = document.querySelectorAll(".box");
 let count = -1;
 
 function Rclick() {
-  if (count <= 6) {
+  if (count <= box.length - 2) {
     count++;
     innerSlider.appendChild(box[count]);
-  } else if (count == 7) {
+  } else if (count == box.length - 1) {
     innerSlider.appendChild(box[0]);
     count = 0;
   }
@@ -20,7 +20,7 @@ function Lclick() {
     return count = count - 1;
   } else if (count == -1) {
     innerSlider.prepend(box[box.length - 1]);
-    return count = 6;
+    return count = box.length - 2;
   }
 }
 
