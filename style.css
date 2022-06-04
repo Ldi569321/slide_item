@@ -2,7 +2,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     width: 100vw;
-    height: 40vh;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
@@ -23,42 +23,42 @@ body {
 }
 
 .box:nth-of-type(1) {
-    left: 0px;
+    left: -415px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(2) {
-    left: 560px;
+    left: 145px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(3) {
-    left: 1120px;
+    left: 705px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(4) {
-    left: 1680px;
+    left: 1265px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(5) {
-    left: 2240px;
+    left: 1825px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(6) {
-    left: 2800px;
+    left: 2385px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(7) {
-    left: 3360px;
+    left: 2945px;
     transition: all 0.25s ease;
 }
 
 .box:nth-of-type(8) {
-    left: 3920px;
+    left: 3505px;
     transition: all 0.25s ease;
 }
 
@@ -100,34 +100,16 @@ body {
     absolute가 없으면 이동이 되지를 않음 */
     position: absolute;
     transition: all 0.25s ease;
-}
-
-@keyframes fadeoutLeft {
-    from{
-        opacity: 0.5;
-    }
-    to {
-        opacity: 0;
-        left: -560px;
-    }
-}
-
-.fadeoutLeft {
-    animation: fadeoutLeft 0.2s;
+    animation: fadeoutLeft 0.25s;
     animation-fill-mode: forwards;
 }
 
+@keyframes fadeoutLeft {
+    to {
+        left: -560px;
+    }
+}
 button {
     border: 0;
     background-color: transparent;
-}
-
-@keyframes fadeoutRight {
-    from{
-        opacity: 0.5;
-    }
-    to {
-        opacity: 0;
-        left: 560px;
-    }
 }
